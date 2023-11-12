@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lista de areas</h1>
+    <ul>
+        <!--ciclo for para iterar entre todos los datos ingresados y mostrarse en pantalla en el navegador-->
+        {% for area in areas %}
+            <li>{{area.nombre_del_area}} - {{area.descripcion}}
+            </li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
